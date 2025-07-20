@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluxo de trabalho Git Flow</title>
 </head>
-<body>
+<hr>
     <h1>Git Flow</h1>
     <h2>Branchig Model</h2>
     <p>Git Flow é um modelo de ramificação para organizar fluxo de trabalho de desenvolvimento de software.</p>
@@ -25,5 +25,38 @@
         <li>release/ —> criada a partir de develop, depois merge com master e develop</li>
         <li>hotfix/ —> criada a partir de master, depois merge com master e develop</li>
     </ol>
+    <section>
+    <h2>Conventional Commits</h2>
+    <p>Conventional Commits é um padrão que estabelece um formato claro e padronizado para mensagens de commit. Ele facilita tanto o entendimento humano quanto a automação, como geração de changelogs e versionamento semântico </p>
+    <h3>Estrutura básica:</h3>
+    <hr></hr>
+    <pre>
+        <code>
+           &lt;tipo&gt; (escopo): &lt;descrição&gt;
+           
+           [corpo opcional]
+
+           [rodapé(s) opcional(is)]
+        </code>
+    </pre>
+    <ul>
+        <li>tipo: feat, fix, docs, style, refactor, test, chore, entre outros</li>
+        <li>escopo: área afetada entre parênteses (ex: (api), (auth))</li>
+        <li>descrição: resumo curto e direto</li>
+        <li>corpo: detalhes do “por quê” e decisões</li>
+        <li>rodapé(s): informações extras, como BREAKING CHANGE ou links para issues</li>
+
+    </ul>
+    <h3>Tipos de commits mais usados</h3>
+    <ul>
+        <li>feat: Novo recurso (define MINOR do SemVer)</li>
+        <li>fix: Correção de bug (define PATCH do SemVer)</li>
+        <li>docs: Documentação</li>
+        <li>style: Formatação sem afetar lógica</li>
+        <li>refactor: Refatoração sem correção ou novo recurso</li>
+        <li>test: Adição ou ajuste de testes</li>
+        <li>chore: Tarefas de manutenção (deps, CI…)</li>
+    </ul>
+  </section>
 </body>
 </html>
