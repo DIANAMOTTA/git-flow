@@ -9,5 +9,21 @@
     <h1>Git Flow</h1>
     <h2>Branchig Model</h2>
     <p>Git Flow é um modelo de ramificação para organizar fluxo de trabalho de desenvolvimento de software.</p>
+    <p>O Git Flow define regras e comandos para criar e gerenciar branches com finalidades específicas, como:</p>
+    <ul>
+        <li>master (ou main): versão de produção (código estável).</li>
+        <li>develop: versão de desenvolvimento (código em andamento).</li>
+        <li>feature/*: novas funcionalidades.</li>
+        <li>release/*: preparação para uma nova versão.</li>
+        <li>hotfix/*: correção urgente em produção.</li>
+        <h2>Fluxo de Trabalho do Git Flow</h2>
+    </ul>
+    <ol>
+        <li>master —> produção</li>
+        <li>develop —> base para features</li>
+        <li>feature/ —> branch criada a partir de develop</li>
+        <li>release/ —> criada a partir de develop, depois merge com master e develop</li>
+        <li>hotfix/ —> criada a partir de master, depois merge com master e develop</li>
+    </ol>
 </body>
 </html>
